@@ -10,18 +10,6 @@ import Button from "react-bootstrap/Button";
 
 export const AddUser = ({ onAdd }) => {
 
-  // const [emailError, setEmailError] = useState('')
-  // const validateEmail = (e) => {
-  //   var email = e.target.value
-
-  //   if (validator.isEmail(email)) {
-  //     setEmailError('Valid Email :)')
-  //   } else {
-  //     setEmailError('Enter valid Email!')
-  //   }
-  // }
-
-
   const handleOnSubmit = (evt) => {
     evt.preventDefault();
     onAdd(evt.target.name.value, evt.target.email.value);
@@ -33,7 +21,7 @@ export const AddUser = ({ onAdd }) => {
   return (
     <div className='d-flex flex-column align-items-center'>
      <Form onSubmit={handleOnSubmit} style={{ width: '20rem', paddingTop: '2rem'}}>
-           <Form.Group>
+           <Form.Group >
                <Form.Label>ADD USER</Form.Label>
                <Form.Control className="name-input" type="text" placeholder="name" name="name" />
                <Form.Control className="email-input" type="email" placeholder="email" name="email"/>

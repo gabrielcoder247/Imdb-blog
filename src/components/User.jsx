@@ -33,10 +33,10 @@ export const User = ({ name, email, id, onEdit, onDelete }) => {
          </Form>
       </div>
       ) : (
-        <div className='user d-flex flex-column align-items-center'>
+        <div className='user d-flex align-items-center'>
           <span className="user-name">{name}</span>
           <span className="user-email">{email}</span>
-          <div>
+          <div className="btn-group">
             <Button onClick={handleEdit}>Edit</Button>
             <Button onClick={handleDelete}>Delete</Button>
           </div>

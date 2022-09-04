@@ -5,7 +5,16 @@
 
 .user {
     display: flex;
+    flex-direction: row;
     width: 600px;
     justify-content: space-between;
     margin: 5px;
+    padding: 20px;
+    width: 80%;
+    margin-left: 160px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: row;
 }
