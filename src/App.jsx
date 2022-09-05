@@ -3,6 +3,8 @@ import { User } from "./components/User";
 import { AddUser } from "./components/AddUser";
 import "./App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import  Navbar  from "./components/Navbar";
+
 
 export default function App() {
   const [users, setUsers] = useState([]);
@@ -98,7 +100,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1>Users</h1>
+      <Navbar/>
       <AddUser onAdd={onAdd} />
       {users.map((user) => (
         <User
@@ -111,5 +113,9 @@ export default function App() {
         />
       ))}
     </div>
+
+
+
+
   );
 }

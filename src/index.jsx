@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import BarChart  from './components/chart'
+import Routers from './routes'
 
 
 
@@ -10,8 +11,7 @@ import BarChart  from './components/chart'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
-    <BarChart />
+    <Routers/>
   </React.StrictMode>
 );
 
