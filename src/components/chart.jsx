@@ -27,18 +27,26 @@ const BarChart = () => {
 
     }
 
-
-  let result = []
-
+    console.log(container)
+    let result = []
+  const labelValue = Object.keys(container.d)
   const dataValue = Object.values(container.d)
   const finalValue = dataValue.map((e) => result.push(e.y))
+  result.sort((a,b)=> a-b)
+
+
+
+
+  const labels = ["January", "February", "March", "April", "May", "June"];
 
   const data = {
     labels: result,
+    // labels: labels,
 
     datasets: [
       {
         label: container.q,
+        // label: 'Hello',
         backgroundColor: "rgb(255, 99, 132)",
         borderColor: "rgb(255, 99, 132)",
         // data: dataValue,
