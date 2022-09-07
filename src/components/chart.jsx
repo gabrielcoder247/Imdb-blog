@@ -59,11 +59,11 @@ const BarChart = () => {
     const labels = ["January", "February", "March", "April", "May", "June"];
 
     const data = {
-        // labels: labels,
-        labels:result,
+        labels: labels,
+        // labels:result,
 
         datasets: [{
-            label: container,
+            label: container.q,
             // label: 'Hello',
             backgroundColor: "rgb(255, 99, 132)",
             borderColor: "rgb(255, 99, 132)",
