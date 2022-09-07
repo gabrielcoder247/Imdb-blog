@@ -49,9 +49,9 @@ const BarChart = () => {
         // const finalValue = dataValue.map((e) => result.push(e.y))
         // const finalResult = result.sort((a,b)=> a-b)
         // console.log(finalResult)
-        const newArr = container.d
-        console.log(newArr)
-        const result  = newArr.map((e) => e.y)
+        // const newArr = container.d
+        // console.log(newArr)
+        // const result  = newArr.map((e) => e.y)
 
 
 
